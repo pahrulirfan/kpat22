@@ -18,6 +18,7 @@ class ProdiController extends Controller
     }
 
     function show(){
+        // untuk detail prodi
         return view('prodi.show');
     }
 }
