@@ -8,7 +8,6 @@ class ProdiController extends Controller
 {
     public function index()
     {
-        // echo 'data semua prodi';
         $nama = 'ILKOM';
 
         $prodis = [

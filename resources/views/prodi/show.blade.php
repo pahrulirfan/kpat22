@@ -4,6 +4,6 @@
     <title>Detail</title>
 </head>
 <body>
-    detail
+    detail prodi
 </body>
 </html>
