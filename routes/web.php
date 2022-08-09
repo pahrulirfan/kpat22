@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PraktikumController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -14,6 +16,10 @@ Route::get('/', function () {
 
 Route::view('/pertemuan2', 'view-pertemuan2');
 
+Route::get('/praktikum', [PraktikumController::class, 'index']);
+Route::get('/praktikum/kpat', [PraktikumController::class, 'kpat']);
+
+Route::view('/portofolio', 'portofolio');
 
 
 
