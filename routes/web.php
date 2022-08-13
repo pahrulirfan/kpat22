@@ -21,6 +21,10 @@ Route::get('/praktikum/kpat', [PraktikumController::class, 'kpat']);
 
 Route::view('/portofolio', 'portofolio');
 
+Route::get('soal', [\App\Http\Controllers\SoalController::class, 'index'])->name('soal.index');
+Route::get('soal/create', [\App\Http\Controllers\SoalController::class, 'create'])->name('soal.create');
+Route::post('soal/save', [\App\Http\Controllers\SoalController::class, 'save'])->name('soal.save');
+
 
 
 
